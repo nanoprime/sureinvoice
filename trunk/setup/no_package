@@ -1,0 +1,15 @@
+# Remove the phpdt data
+setup/phpdt-20040413.sql
+setup/phpdt-20050426.sql
+setup/phpdt-20050504.sql
+
+#Remove all the build helper scripts
+includes/version.template.php
+setup/export_db.sh
+setup/no_package
+setup/build_release.sh
+setup/phpdt_import.sh
+setup/phpdt_to_sureinvoice.php
+setup/sureinvoice-20050426.sql
+setup/sureinvoice_initial2_data.sql
+

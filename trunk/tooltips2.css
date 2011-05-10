@@ -1,0 +1,17 @@
+.tooltip{
+	width: 261px;
+	height: 160px;
+	background-color:#CFE3FB;
+	background-image:url(containerTitle.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #D0CAC3;
+	padding:3px;
+	margin-bottom:10px;
+	overflow:hidden;
+	float:left;
+	margin-right:10px;	
+}
+
+.ad_label{
+	font-weight: bolder;
+}

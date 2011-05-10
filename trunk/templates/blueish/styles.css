@@ -1,0 +1,799 @@
+body,td,th {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;color: #333333;}
+body,td,th {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;color: #333333;}
+body {margin:0px;}
+img{border:none;}
+a{text-decoration:none;color:#003366;}
+a:hover{color:#FF6600;}
+*{margin:0px;padding:0px;}
+#header{background-image:url(header_bg.jpg);height:83px;width:100%;}
+#header #logo{float:left;}
+#nav{list-style:none;padding-top:56px;}
+#nav li{float:left;}
+
+#nav a{
+	float:left;
+	text-decoration:none;
+	color:#FFFFFF;
+	background-image:url(tab_left.jpg);
+	background-repeat:no-repeat;	
+	height:27px;
+	padding-left:9px;
+	font-size:14px;
+}
+
+#nav a span{
+	background-image:url(tab_right.jpg);
+	background-position:right;
+	padding-right:25px;
+	height:27px;
+	float:left;
+	text-align:center;
+	line-height:1.8;
+	cursor:pointer;
+}
+
+#nav a:hover{
+	background-image:url(tab_left_up.jpg);
+	color:#FFFFFF;
+}
+
+#nav a:hover span{
+	background-image:url(tab_right_up.jpg);
+}
+
+#nav .navSelected{
+	color:#660000;
+	background-image:url(tab_left_sel.jpg);
+	
+}
+
+#nav .navSelected span{
+	background-image:url(tab_right_sel.jpg);
+	font-weight:bold;
+}
+
+#nav .navSelected:hover{
+	background-image:url(tab_left_sel.jpg);
+	color:#FF0000;
+	
+}
+
+#nav .navSelected:hover span{
+	background-image:url(tab_right_sel.jpg);
+	font-weight:bold;
+}
+
+#wrapper{
+	width:100%;
+	float:left;
+}
+
+#sidebar{
+	width:165px;
+	background-image:url(sidebar_bg.jpg);
+	margin-left:-100%;
+	float:left;
+}
+
+#sidebar #sidebarHider{
+	display:block;
+	height:24px;
+	background-image:url(sidebar_top.jpg);
+}
+
+#sidebar ul{
+	margin-left:5px;
+	list-style-type:none;
+}
+
+#sidebar h3{
+	margin-left:3px;
+	margin-top:5px;
+}
+
+#sidebar a{
+	color:#003399;
+	text-decoration:none;
+	font-size:11px;
+	margin-bottom:4px;
+}
+
+#sidebar a:hover{
+	text-decoration:underline;
+}
+
+#sidebar li{
+	margin-bottom:4px;
+}
+
+#sidebar #sidebarBottom{
+	height:18px;
+	background-image:url(sidebar_bot.jpg);
+}
+
+#sidebarShow{
+	width:26px;
+	height:135px;
+	background-image:url(show_menu.jpg);
+	display:none;
+	float:left;
+	margin-left:-100%;
+}
+
+#main {
+	margin-left:165px;
+	padding:3px;
+}
+
+.tableContainer{
+	background-color:#CFE3FB;
+	background-image:url(containerTitle.jpg);
+	background-repeat:repeat-x;
+	border:1px solid #D0CAC3;
+	padding:3px;
+	margin-bottom:10px;
+	overflow:visible;
+	float:left;
+	margin-right:10px;
+}
+
+.tableContainer table{
+	background-color:#FFFFFF;
+	border:1px solid #D0CAC3;
+}
+
+.tableContainer th, .dg_header_cell{
+	background-color:#FFFFFF;
+	border:1px solid #D0CAC3;
+	border-left:none;
+	border-top:none;
+	padding:2px;
+	background-image:url(grid_head.jpg);
+	background-position:bottom;
+	background-repeat:repeat-x;
+}
+
+.tableContainer td{
+	background-color:#FFFFFF;
+	border:1px solid #D0CAC3;
+	border-left:none;
+	border-top:none;
+	padding:2px;
+}
+
+.tCollapse{
+	color:#000000;
+	margin-left:5px;
+	font-size:14px;
+}
+
+.tCollapse img{
+	margin-right:5px;
+}
+
+.tCollapse:hover{
+	color:#093D7D;
+}
+#recentTime{
+
+}
+
+#recentTime h3{
+	background-image:url(sidebar_recent_time.png);
+	background-repeat:no-repeat;
+	height:22px;
+	padding-left:25px;
+	color:#333333;
+	line-height:1.5;
+	font-size:14px;
+}
+
+#adminMenu{
+
+}
+
+#adminMenu h3{
+	background-image:url(sidebar_admin_menu.png);
+	background-repeat:no-repeat;
+	height:22px;
+	padding-left:25px;
+	color:#333333;
+	line-height:1.5;
+	font-size:14px;
+}
+
+#adminMenu a:hover{
+	color:#FF6600;
+}
+
+.gridToolbar{
+	margin-bottom:3px;
+	padding-left:4px;
+	line-height:1.6;
+	background-image:url(toolbar_bg.jpg);
+	height:21px;
+	border-left:1px solid #CCCCCC;
+	clear: both;
+	color:#003366;
+}
+
+.gridToolbar a{
+	color:#003366;
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	background-repeat:no-repeat;
+	background-position: left center;
+	padding-left:20px;
+	padding-right:20px;	
+	padding-top:5px;
+	padding-bottom:5px;
+}
+
+.gridToolbar a:hover{
+	color:#FF6600;
+}
+
+.gridActions{
+	text-align:center;
+}
+
+.box{background-image:url(box_bg_l.jpg);background-repeat:repeat-y;clear:left;}
+.box .boxTitle{background-image:url(box_title_bg2.jpg);background-repeat:repeat-x;height:40px;}
+.box .boxTitle h3{background-image:url(box_title_l.jpg);background-repeat:no-repeat;height:40px;display:inline;float:left;font-size:16px;color:#885002;text-indent:8px;line-height:1.8;}
+.box .boxTitleRight{background-image:url(box_title_r.jpg);width:43px;height:40px;float:left;}
+.box .boxTitleCorner{background-image:url(box_title_r2.jpg);width:16px;height:40px;float:right;}
+.box .boxContent{background-image:url(box_bg_r.jpg);background-position:right;background-repeat:repeat-y;padding:0px 6px 6px 10px;}
+.box .boxBottom{background-image:url(box_bot_bg.jpg);height:17px;clear:both;}
+.box .boxBottom .boxCornerL{background-image:url(box_bot_l.jpg);height:17px;width:10px;float:left;}
+.box .boxBottom .boxCornerR{background-image:url(box_bot_r.jpg);height:17px;width:16px;float:right;}
+
+#footer{
+	background-image:url(footer_bg.jpg);
+	height:48px;
+	clear:both;
+	text-align:center;
+	line-height:5;
+	font-weight:bold;
+	color:#003366;
+}
+
+/**imported css for calendars*/
+.error{
+	color : #CC0000;
+	font-weight : bold;
+}
+
+.dynCalendar_header{
+	font-family: Arial, Verdana, Helvetica, Sans-Serif;
+	font-size: 8pt;
+	font-weight: bold;
+}
+.dynCalendar_dayname {
+	background-color: #eeeeee;
+	border: 1px solid #c0c0c0;
+	font-family: Arial, Verdana, Helvetica, Sans-Serif;
+	font-size: 8pt;
+	text-align: center;
+}
+
+td.dynCalendar_day {
+	background-color: #FFFFFF;
+	color: #000000;
+	font-family: Arial, Verdana, Helvetica, Sans-Serif;
+	font-size: 8pt;
+}
+
+td.dynCalendar_today {
+	background-color: #FFCC33;
+	border: 1px solid #c0c0c0;
+	font-family: Arial, Verdana, Helvetica, Sans-Serif;
+	font-size: 8pt;
+}
+
+.dynCalendar {
+	background-color: #c0c0c0;
+	border: 2px outset white;
+	visibility: hidden;
+	position: absolute;
+	top: 1px;
+	left: 1px;
+}
+.cal_day_current{
+	height: 120px;
+	width: 150px;
+	vertical-align: top;
+	background-color: #FFFF99;
+	border-right-color : Black;
+	border-right-style : solid;
+	border-right-width : 1px;
+	border-bottom-color : Black;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+}
+.cal_day {
+	height: 120px;
+	width: 150px;
+	vertical-align: top;
+	border-right-color : Black;
+	border-right-style : solid;
+	border-right-width : 1px;
+	border-bottom-color : Black;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+}
+.cal_day_empty {
+	height: 120px;
+	width: 150px;
+	vertical-align: top;
+	border-right-color : Black;
+	border-right-style : solid;
+	border-right-width : 1px;
+	border-bottom-color : Black;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	background-color : #CCCCCC;
+}
+.cal_date{
+	border-bottom-color : Black;
+	border-bottom-style : groove;
+	border-bottom-width : 1px;
+	color : #003399;
+	text-decoration : none;
+	text-align : center;
+	font-weight : bold;
+	background-image: url(table-header.gif);
+}
+.cal_hour_current{
+	vertical-align: top;
+	background-color: #FFFF99;
+	border-right-color : Black;
+	border-right-style : solid;
+	border-right-width : 1px;
+	border-bottom-color : Black;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+}
+.cal_hour {
+	vertical-align: top;
+	border-right-color : Black;
+	border-right-style : solid;
+	border-right-width : 1px;
+	border-bottom-color : Black;
+	border-bottom-style : solid;
+	border-bottom-width : 1px;
+	text-align : right;
+	width: 50px;
+}
+
+
+#timers {
+	position: absolute;
+	z-index: 30;
+	width: 165px;
+}
+
+.timer {
+	background-image:url(timer_bg_px.png);
+	background-repeat:repeat-y;
+	padding-left: 6px;
+	padding-bottom: 5px;
+	text-align: right;
+}
+
+.timer_name {
+	display: block;
+	font-weight: bold;
+}
+
+#timers input {
+	font-size: 10px;
+}
+
+/* Container CSS */
+/*
+Copyright (c) 2006, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+Version 0.11.0
+*/
+
+.overlay {
+	position:absolute;
+	display:block;
+}
+
+.tt {
+	visibility:hidden;
+	position:absolute;
+	color:#333;
+	background-color:#FDFFB4;
+	font-family:arial,helvetica,verdana,sans-serif;
+	padding:2px;
+	border:1px solid #FCC90D;
+	font:100% sans-serif;
+	width:auto;
+}
+
+* html body.masked select {
+	visibility:hidden;
+}
+
+* html div.panel-container select {
+	visibility:inherit;
+}
+
+* html div.drag select {
+	visibility:hidden;
+}
+
+* html div.hide-select select {
+	visibility:hidden;
+}
+
+.mask {
+    z-index:0;   
+    display:none;
+    position:absolute;
+    top:0;
+    left:0;
+    -moz-opacity: 0.5;
+    opacity:.50;
+    filter: alpha(opacity=50);
+    background-color:#CCC;
+}
+
+.hide-scrollbars * {
+	overflow:hidden;
+}
+
+.hide-scrollbars textarea, .hide-scrollbars select {
+	overflow:hidden;
+	display:none;
+}
+
+.show-scrollbars textarea, .show-scrollbars select {
+	overflow:visible;
+}
+
+.yui-panel-container {
+	position:absolute;
+	background-color:transparent;
+	z-index:6;
+	visibility:hidden;
+	overflow:visible;
+	width:auto;
+}
+
+.yui-panel-container.matte {
+	padding:3px;
+	background-color:#FFF;
+}
+
+.yui-panel-container.matte .underlay {
+	display:none;
+}
+
+.yui-panel-container.shadow {
+	padding:0px;
+	background-color:transparent;
+}
+
+.yui-panel-container.shadow .underlay {
+	visibility:inherit;
+	position:absolute;
+	background-color:#CCC;
+	top:3px;left:3px;
+	z-index:0;
+	width:100%;
+	height:100%;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter:alpha(opacity=70);
+	zoom:1;
+}
+
+.yui-panel {
+	visibility:hidden;
+	border-collapse:separate;
+	position:relative;
+	left:0px;top:0px;
+	font:1em Arial;
+	background-color:#FFF;
+	border:1px solid #000;
+	z-index:1;
+	overflow:hidden;
+}
+
+.yui-panel .hd {
+	background-color:#3d77cb;
+	color:#FFF;
+	font-size:100%;
+	line-height:100%;
+	border:1px solid #FFF;
+	border-bottom:1px solid #000;
+	font-weight:bold;
+	overflow:hidden;
+	padding:4px;
+}
+
+.yui-panel .bd {
+	overflow:hidden;
+	padding:4px;
+}
+
+.yui-panel .bd p {
+	margin:0 0 1em;
+}
+
+.yui-panel .close {
+	position:absolute;
+	top:5px;
+	right:4px;
+	z-index:6;
+	height:12px;
+	width:12px;
+	margin:0px;
+	padding:0px;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	visibility:inherit;
+}
+
+.yui-panel .ft {
+	padding:4px;
+	overflow:hidden;
+}
+
+.simple-dialog .bd .icon {
+	background-repeat:no-repeat;
+	width:16px;
+	height:16px;
+	margin-right:10px;
+	float:left;
+}
+
+.dialog .ft, .simple-dialog .ft {
+	padding-bottom:5px;
+	padding-right:5px;
+	text-align:right;
+}
+
+.dialog form, .simple-dialog form {
+	margin:0;
+}
+
+.button-group button {
+	font:100 76% verdana;
+	text-decoration:none;
+	background-color: #E4E4E4;
+	color: #333;
+	cursor: hand;
+	vertical-align: middle;
+	border: 2px solid #797979;
+	border-top-color:#FFF;
+	border-left-color:#FFF;
+	margin:2px;
+	padding:2px;
+}
+
+.button-group button.default {
+	font-weight:bold;
+}
+
+.button-group button:hover, .button-group button.hover { 
+	border:2px solid #90A029;
+	background-color:#EBF09E;
+	border-top-color:#FFF;
+	border-left-color:#FFF;
+}
+
+.button-group button:active { 
+	border:2px solid #E4E4E4;
+	background-color:#BBB;
+	border-top-color:#333;
+	border-left-color:#333;
+}
+
+.siACContainer {position:absolute;z-index:9050;} 
+.siACContainer .yui-ac-content {position:absolute;left:0;top:0;width:50em;border:1px solid #404040;background:#fff;overflow:auto;text-align:left;z-index:9050;} 
+.siACContainer .yui-ac-shadow {position:absolute;left:0;top:0;margin:.3em;background:#a0a0a0;z-index:9049;} 
+.siACContainer ul {padding:5px 0;width:100%;} 
+.siACContainer li {padding:0 5px;cursor:default;white-space:nowrap;} 
+.siACContainer li.yui-ac-highlight {background:#ff0;} 
+
+/* Calender CSS */
+/*
+Copyright (c) 2006, Yahoo! Inc. All rights reserved.
+Code licensed under the BSD License:
+http://developer.yahoo.net/yui/license.txt
+Version 0.12
+*/
+
+.yui-calcontainer {
+	position:relative;
+	padding:5px;
+	background-color:#F7F9FB;
+	border:1px solid #7B9EBD;
+	float:left;
+	overflow:hidden;
+}
+
+.yui-calcontainer iframe {
+	position:absolute;
+	border:none;
+	margin:0;padding:0;
+	left:-1px;
+	top:-1px;
+	z-index:0;
+	width:50em;
+	height:50em;
+}
+
+.yui-calcontainer.multi {
+	padding:0;
+}
+
+.yui-calcontainer.multi .groupcal {
+	padding:5px;
+	background-color:transparent;
+	z-index:1;
+	float:left;
+	position:relative;
+	border:none;
+}
+
+.yui-calcontainer .title {
+	font:100% sans-serif;
+	color:#000;
+	font-weight:bold;
+	margin-bottom:5px;
+	height:25px;
+	position:absolute;
+	top:3px;left:5px;
+	z-index:1;
+}
+
+.yui-calcontainer .close-icon {
+	position:absolute;
+	right:3px;
+	top:3px;
+	border:none;
+	z-index:1;
+}
+
+/* Calendar element styles */
+
+.yui-calendar {
+	font:100% sans-serif;
+	text-align:center;
+	border-spacing:0;
+	border-collapse:separate;
+	position:relative;
+}
+
+.yui-calcontainer.withtitle {
+	padding-top:1.5em;
+}
+
+.yui-calendar .calnavleft {
+	position:absolute;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	top:2px;
+	bottom:0;
+	width:9px;
+	height:12px;   
+	left:2px;
+	z-index:1;
+}
+
+.yui-calendar .calnavright {
+	position:absolute;
+	background-repeat:no-repeat;
+	cursor:pointer;
+	top:2px;
+	bottom:0;
+	width:9px;
+	height:12px;  
+	right:2px;
+	z-index:1;
+}
+
+.yui-calendar td.calcell {
+	padding:.1em .2em;
+	border:1px solid #E0E0E0;
+	text-align:center;
+}
+
+.yui-calendar td.calcell a {
+	color:#003DB8;
+	text-decoration:none;
+}
+
+.yui-calendar td.calcell.today {
+	border:1px solid #000;
+}
+
+.yui-calendar td.calcell.oom {
+	cursor:default;
+	color:#999;
+	background-color:#EEE;
+	border:1px solid #E0E0E0;
+}
+
+.yui-calendar td.calcell.selected {
+	color:#003DB8;
+	background-color:#FFF19F;
+	border:1px solid #FF9900;
+}
+
+.yui-calendar td.calcell.calcellhover {
+	cursor:pointer;
+	color:#FFF;
+	background-color:#FF9900;
+	border:1px solid #FF9900;
+}
+
+.yui-calendar td.calcell.calcellhover a {
+	color:#FFF;
+}
+
+.yui-calendar td.calcell.restricted {
+	text-decoration:line-through;
+}
+
+.yui-calendar td.calcell.previous {
+	color:#CCC;
+}
+
+.yui-calendar td.calcell.highlight1 { background-color:#CCFF99; }
+.yui-calendar td.calcell.highlight2 { background-color:#99CCFF; }
+.yui-calendar td.calcell.highlight3 { background-color:#FFCCCC; }
+.yui-calendar td.calcell.highlight4 { background-color:#CCFF99; }
+
+.yui-calendar .calhead {
+	border:1px solid #E0E0E0;
+	vertical-align:middle;
+	background-color:#FFF;
+}
+
+.yui-calendar .calheader {
+	position:relative;
+	width:100%;
+	text-align:center;
+}
+
+.yui-calendar .calheader img {
+	border:none;
+}
+
+.yui-calendar .calweekdaycell {
+	color:#666;
+	font-weight:normal;
+	text-align:center;
+	width:1.5em;
+}
+
+.yui-calendar .calfoot {
+	background-color:#EEE;
+}
+
+.yui-calendar .calrowhead, .yui-calendar .calrowfoot {
+	color:#666;
+	font-size:9px;
+	font-style:italic;
+	font-weight:normal;
+	width:15px;
+}
+
+.yui-calendar .calrowhead {
+	border-right-width:2px;
+}
+
+/*Specific changes for calendar running under fonts/reset */
+.yui-calendar a:hover {background:inherit;}
+p#clear {clear:left; padding-top:10px;}
+
+.input_error {
+	border: 1px red solid;
+}

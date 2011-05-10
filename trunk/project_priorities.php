@@ -1,0 +1,68 @@
+<?
+/**
+ *
+ * Copyright (C) 2003-2011 Cory Powers
+ *
+ * This program is free software; you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation; either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301, USA.
+ * http://www.gnu.org/copyleft/gpl.html
+ *
+ */
+require_once('includes/common.php');
+require_once('includes/SI_ProjectPriority.php');
+
+checkLogin("admin");
+
+$project_priority = new SI_ProjectPriority();
+$project_prioirities = SI_ProjectPriority::retrieveSet();
+if($project_prioirities === FALSE){
+	$error_msg .= "Error getting project priorities!\n";
+	debug_message($project_priority->getLastError());
+}
+
+$title = "Project Priority Administration";
+
+require('header.php') ?>
+<div class="tableContainer">
+<a href="javascript:;" class="tCollapse" onclick="toggleGrid(this)"><img src="images/arrow_down.jpg" alt="Hide table" />Project Priorities</a><div>
+	<div class="gridToolbar">
+		  <a href="project_priority.php?mode=add" style="background-image:url(images/new_invoice.png);">New Project Priority</a>
+	</div>
+<table border="0" cellspacing="0" cellpadding="0">
+	<tr>
+		<th><a href="" onclick="return sortTable('bodyId', 0, 1, false)">ID</a></th>
+		<th><a href="" onclick="return sortTable('bodyId', 1, 1, false)">Name</a></th>
+		<th><a href="" onclick="return sortTable('bodyId', 2, 1, false)">Level</a></th>
+		<th>Edit</th>
+		<th>Delete</th>		
+	</tr>
+	<tbody id="bodyId">
+<? for($i = 0; $i < count($project_prioirities); $i++){ ?>
+	<tr onmouseover="this.style.backgroundColor ='#CCCCCC'" onmouseout="this.style.backgroundColor ='#FFFFFF'">
+		<td><?= $project_prioirities[$i]->id ?></td>
+		<td><?= $project_prioirities[$i]->name ?></td>
+		<td><?= $project_prioirities[$i]->priority_level ?></td>
+		<td class="gridActions">
+			<a href="project_priority.php?mode=edit&id=<?= $project_prioirities[$i]->id ?>"><img src="images/edit.png" width="16" height="16" alt="Edit" title="Edit" border="0" /></a>
+		</td>
+		<td class="gridActions">
+			<a href="project_priority.php?mode=delete&id=<?= $project_prioirities[$i]->id ?>"><img src="images/delete.png" width="16" height="16" alt="Delete" title="Delete" border="0" /></a>
+		</td>		
+	</tr>
+<? }?>
+</tbody>
+</table>
+	</div>
+</div>
+<? require('footer.php') ?>

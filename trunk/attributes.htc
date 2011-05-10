@@ -1,0 +1,9 @@
+<PUBLIC:COMPONENT>
+	<PUBLIC:METHOD NAME="nextObject" INTERNALNAME="_nextObject" />
+	<PUBLIC:METHOD NAME="previousObject" INTERNALNAME="_previousObject" />
+	<script type="text/javascript">
+		var el = new Object;
+		_nextObject = el.nextObject;
+		_previousObject = el.previousObject;
+	</script>
+</PUBLIC:COMPONENT>
